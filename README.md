@@ -1,5 +1,5 @@
 # COP 3530 - Fall 2021, Professor Bitner
-![Ironic "nothing to see here" scene from The Naked Gun](https://res.cloudinary.com/dm3fdmzec/image/upload/v1630351332/nothing-to-see-here_yufjmv.gif)
+![Ironic "nothing to see here" scene from The Naked Gun](https://res.cloudinary.com/dm3fdmzec/image/upload/q_50/v1630351332/nothing-to-see-here_yufjmv.gif)
 
 This is the code that we have developed in class.
 We will update this continually as the semester progresses, `git pull` often.
