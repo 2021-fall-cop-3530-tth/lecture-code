@@ -1,9 +1,10 @@
 #include <iostream>
 #include <sstream>
 #include <string>
+#include "student.hpp"
 
 std::string printToN (int n);
-int mainnn ()
+int main ()
 {
 	std::cout << printToN(20);
 	std::cout << std::endl;
@@ -20,9 +21,7 @@ int mainnn ()
 	std::cout << 20;
 	std::cout << std::endl;
 
-	double student_1_gpa = 1.8;
-	std::string student_1_fname = "John";
-	std::string student_1_lname = "Doe";
+	Student s(1.8, "John", "Doe");
 
 	double student_2_gpa = 1.4;
 	std::string student_2_fname = "Jane";
@@ -36,7 +35,9 @@ int mainnn ()
 	std::string student_4_fname = "Alan";
 	std::string student_4_lname = "Turing";
 
-	std::cout << student_1_lname << ", " << student_1_fname << ": " << student_1_gpa << "\n";
+	// array of stuff
+
+	std::cout << s << "\n";
 	std::cout << student_2_lname << ", " << student_2_fname << ": " << student_2_gpa << "\n";
 	std::cout << student_3_lname << ", " << student_3_fname << ": " << student_4_gpa << "\n";
 	std::cout << student_4_lname << ", " << student_3_fname << ": " << student_4_gpa << "\n";
