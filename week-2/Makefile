@@ -10,3 +10,6 @@ main: student.o main.cpp
 	#$(CXX) $(CXXFLAGS) -o main main.cpp student.o
 	$(CXX) $(CXXFLAGS) -o $@ $^
 	./$@
+
+clean:
+	$(RM) main a.out student.o
