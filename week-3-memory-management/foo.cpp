@@ -1,10 +1,29 @@
 #include "foo.hpp"
 
-Foo::Foo ()
+Foo::Foo (int a)
 {
-	this->a = new int[10];
+	this->a = new int[a];
 }
+
+Foo (const Foo& rhs)
+{
+	// copy rhs
+}
+Foo& operator= (const Foo& rhs)
+{
+	this->ReleaseMemory();
+	//copy rhs
+}
+
 Foo::~Foo ()
 {
-	delete [] this->a;
+	this->ReleaseMemory();
+}
+
+void Foo::ReleaseMemory ()
+{
+	if (this->a != nullptr)
+	{
+		delete [] this->a;
+	}
 }

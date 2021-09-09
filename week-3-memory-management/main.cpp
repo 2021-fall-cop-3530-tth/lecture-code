@@ -43,6 +43,7 @@ int main ()
 	delete [] matrix;
 
 	Foo f;
+	Foo fooArr[10];
 	breakStuff(f);
 	Foo* g = nullptr;
 	g = &f;
