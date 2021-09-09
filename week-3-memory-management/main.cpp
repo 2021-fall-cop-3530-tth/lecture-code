@@ -1,4 +1,9 @@
 #include <iostream>
+#include "foo.hpp"
+
+void breakStuff (Foo a)
+{
+}
 
 int main ()
 {
@@ -36,6 +41,13 @@ int main ()
 		delete [] matrix[i];
 	}
 	delete [] matrix;
+
+	Foo f;
+	breakStuff(f);
+	Foo* g = nullptr;
+	g = &f;
+	Foo h;
+	h = f;
 
 	return 0;
 }

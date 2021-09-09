@@ -7,6 +7,9 @@ class Foo
 		int * a;
 	public:
 		Foo ();
+		Foo (const Foo& rhs);
+		Foo& operator= (const Foo& rhs);
+		~Foo ();
 };
 
 #endif /*FOO_HPP*/
