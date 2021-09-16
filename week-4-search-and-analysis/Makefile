@@ -13,3 +13,7 @@ main: main.cpp $(OBJECTS) linear-search.o
 
 clean:
 	$(RM) main *.o
+
+test: test-search.cpp search.o ../catch/catch.o
+	$(CXX) $(CXXFLAGS) -o $@ $^
+	./$@ --success
