@@ -7,5 +7,5 @@ TEST_CASE("Search for element not there")
 {
 	CHECK(-1 == Search::Find(arr, 9, 7));
 	CHECK(8 == Search::Find(arr, 9, 100));
-//	CHECK(?? == search 5)
+	CHECK(4 == Search::Find(arr, 9, 5));
 }
