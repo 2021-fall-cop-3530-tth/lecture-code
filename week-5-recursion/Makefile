@@ -14,6 +14,9 @@ main: main.cpp $(OBJECTS) linear-search.o
 clean:
 	$(RM) main *.o
 
+test-build: test-search.cpp search.o ../catch/catch.o
+	$(CXX) $(CXXFLAGS) -o test $^
+
 test: test-search.cpp search.o ../catch/catch.o
 	$(CXX) $(CXXFLAGS) -o $@ $^
 	./$@ --success
