@@ -4,6 +4,8 @@
 class Utils
 {
 	public:
-		static void Swap (int a[], int i, int j);
+		template <typename TemplateType>
+		static void Swap (TemplateType a[], int i, int j);
+		//static void Swap (double a[], int i, int j);
 };
 #endif /*UTILS_HPP*/
