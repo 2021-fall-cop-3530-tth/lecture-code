@@ -8,7 +8,7 @@ class Node
 		T data;
 		Node<T>* next;
 	public:
-		Node (T inData);
+		Node (T inData, Node<T>* n = nullptr);
 		T GetValue ();
 		Node<T>* GetNext ();
 };

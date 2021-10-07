@@ -1,10 +1,10 @@
 #include "node.hpp"
 
 template <typename T>
-Node<T>::Node (T inData)
+Node<T>::Node (T inData, Node<T>* n)
 {
 	this->data = inData;
-	this->next = nullptr;
+	this->next = n;
 }
 
 template <typename T>
