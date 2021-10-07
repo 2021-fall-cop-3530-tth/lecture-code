@@ -12,3 +12,7 @@ clean:
 test-utils: test-utils.cpp utils.o ../catch/catch.o
 	$(CXX) $(CXXFLAGS) -o $@ $^
 	./$@ --success
+
+test-node: test-node.cpp node.o ../catch/catch.o
+	$(CXX) $(CXXFLAGS) -o $@ $^
+	./$@ --success
