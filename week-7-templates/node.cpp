@@ -4,12 +4,19 @@ template <typename T>
 Node<T>::Node (T inData)
 {
 	this->data = inData;
+	this->next = nullptr;
 }
 
 template <typename T>
 T Node<T>::GetValue ()
 {
 	return this->data;
+}
+
+template <typename T>
+Node<T>* Node<T>::GetNext ()
+{
+	return this->next;
 }
 
 template class Node<int>;

@@ -6,9 +6,11 @@ class Node
 {
 	private:
 		T data;
+		Node<T>* next;
 	public:
 		Node (T inData);
 		T GetValue ();
+		Node<T>* GetNext ();
 };
 
 #endif /*NODE_HPP*/
