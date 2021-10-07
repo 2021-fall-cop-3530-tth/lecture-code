@@ -16,3 +16,7 @@ test-utils: test-utils.cpp utils.o ../catch/catch.o
 test-node: test-node.cpp node.o ../catch/catch.o
 	$(CXX) $(CXXFLAGS) -o $@ $^
 	./$@ --success
+
+test-list: test-list.cpp list.o node.o ../catch/catch.o
+	$(CXX) $(CXXFLAGS) -o $@ $^
+	./$@ --success
