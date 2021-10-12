@@ -5,6 +5,7 @@
 TEST_CASE("Test List")
 {
 	List<int> l;
+	l.DeleteFromFront();
 	REQUIRE(nullptr == l.GetFront());
 
 	l.InsertAtFront(10);
