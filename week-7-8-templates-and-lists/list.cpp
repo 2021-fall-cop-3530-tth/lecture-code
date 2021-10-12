@@ -7,6 +7,14 @@ List<T>::List ()
 }
 
 template <typename T>
+void List<T>::DeleteFromFront ()
+{
+	Node<T>* temp = this->front->GetNext();
+	delete this->front;
+	this->front = temp;
+}
+
+template <typename T>
 void List<T>::InsertAtFront (T inData)
 {
 	// steps 1 & 2

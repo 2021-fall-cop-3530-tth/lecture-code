@@ -10,6 +10,7 @@ class List
 	public:
 		List ();
 		void InsertAtFront (T inData);
+		void DeleteFromFront ();
 		Node<T>* GetFront ();
 };
 
