@@ -1,5 +1,6 @@
 #include "../catch/catch.hpp"
 #include "insertion-sort.hpp"
+#include "merge-sort.hpp"
 #include <vector>
 
 TEST_CASE("Test sort")
@@ -11,6 +12,13 @@ TEST_CASE("Test sort")
 	{
 		REQUIRE(sorted != unsorted);
 		InsertionSort::Sort(unsorted);
+		REQUIRE(sorted == unsorted);
+	}
+
+	SECTION("Merge sort")
+	{
+		REQUIRE(sorted != unsorted);
+		MergeSort::Sort(unsorted);
 		REQUIRE(sorted == unsorted);
 	}
 }

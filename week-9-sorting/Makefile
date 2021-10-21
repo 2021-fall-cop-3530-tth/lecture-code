@@ -6,7 +6,7 @@ CXX = g++
 #  -Wall turns on most, but not all, compiler warnings
 CXXFLAGS  = -g -Wall -std=c++11
 
-test: test-sort.cpp insertion-sort.o ../catch/catch.o
+test: test-sort.cpp insertion-sort.o merge-sort.o ../catch/catch.o
 	$(CXX) $(CXXFLAGS) -o $@ $^
 	./$@ --success
 
