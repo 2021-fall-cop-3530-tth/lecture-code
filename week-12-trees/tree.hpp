@@ -10,6 +10,8 @@ class Tree
 		Node<T>* root;
 	public:
 		Tree ();
+		Node<T>* GetRoot();
+		void Insert (T data);
 };
 
 #endif /*TREE_HPP*/
