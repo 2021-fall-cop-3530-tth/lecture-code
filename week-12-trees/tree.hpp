@@ -8,8 +8,10 @@ class Tree
 {
 	private:
 		Node<T>* root;
+		void DeleteSubtree (Node<T>* subtreeRoot);
 	public:
 		Tree ();
+		~Tree ();
 		Node<T>* GetRoot();
 		void Insert (T data);
 };
