@@ -14,7 +14,43 @@ Node<T>* Tree<T>::GetRoot()
 template <typename T>
 void Tree<T>::Insert (T data)
 {
-	this->root = new Node<T>(data);
+	if (this->root == nullptr)
+	{
+		this->root = new Node<T>(data);
+	}
+	else
+	{
+		Node<T>* currentNode = this->root;
+		while (currentNode != nullptr)
+		{
+			if (currentNode->GetValue() > data)
+			{
+				// go left
+				if (currentNode->GetLeft() == nullptr)
+				{
+					currentNode->SetLeft(new Node<T>(data));
+					return;
+				}
+				else
+				{
+					currentNode = currentNode->GetLeft();
+				}
+			}
+			else
+			{
+				// go right
+				if (currentNode->GetRight() == nullptr)
+				{
+					currentNode->SetRight(new Node<T>(data));
+					return;
+				}
+				else
+				{
+					currentNode = currentNode->GetRight();
+				}
+			}
+		}
+	}
 }
 
 template class Tree<int>;
