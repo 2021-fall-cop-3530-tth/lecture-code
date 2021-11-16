@@ -12,4 +12,9 @@ TEST_CASE("Test Node")
 	REQUIRE(2 == two->GetValue());
 	REQUIRE(one == two->GetLeft());
 	REQUIRE(nullptr == two->GetRight());
+
+	two->SetRight(two);
+	REQUIRE(two == two->GetRight());
+	one->SetLeft(two);
+	REQUIRE(two == one->GetLeft());
 }

@@ -26,4 +26,16 @@ Node<T>* Node<T>::GetRight ()
 	return this->right;
 }
 
+template <typename T>
+void Node<T>::SetLeft (Node<T>* newLeft)
+{
+	this->left = newLeft;
+}
+
+template <typename T>
+void Node<T>::SetRight (Node<T>* newRight)
+{
+	this->right = newRight;
+}
+
 template class Node<int>;

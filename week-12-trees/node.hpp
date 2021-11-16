@@ -13,6 +13,8 @@ class Node
 		T GetValue ();
 		Node<T>* GetLeft ();
 		Node<T>* GetRight ();
+		void SetRight (Node<T>* newRight);
+		void SetLeft (Node<T>* newLeft);
 };
 
 #endif /*NODE_HPP*/
