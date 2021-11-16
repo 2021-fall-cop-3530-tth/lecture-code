@@ -9,6 +9,6 @@ CXXFLAGS  = -g -Wall -std=c++11
 clean:
 	$(RM) main *.o
 
-test-heap: test-heap.cpp heap.o node.o ../catch/catch.o
+test-heap: test-heap.cpp heap.o ../catch/catch.o
 	$(CXX) $(CXXFLAGS) -o $@ $^
 	./$@ --success
