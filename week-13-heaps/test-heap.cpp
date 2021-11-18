@@ -20,4 +20,9 @@ TEST_CASE("Test Heap")
 	h.Insert(12);
 
 	REQUIRE(132 == h.Max());
+
+	// valid heap
+	h.Pop();
+	// valid heap (132 gone)
+	REQUIRE(16 == h.Max());
 }

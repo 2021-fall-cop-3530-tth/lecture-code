@@ -8,6 +8,7 @@ class Heap
 	private:
 		std::vector<int> data;
 		void Percolate (int i);
+		void PercolateDown (int i);
 		void Swap (int i, int j);
 	public:
 		int GetParent (int i);
@@ -15,6 +16,7 @@ class Heap
 		int GetRight (int i);
 		void Insert (int newValue);
 		int Max ();
+		void Pop ();
 };
 
 #endif /*HEAP_HPP*/
